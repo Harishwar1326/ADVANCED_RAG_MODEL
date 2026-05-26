@@ -153,7 +153,7 @@ export default function HomePage() {
       <section className="hero">
         <div className="hero-panel">
           <div className="brand-row">
-            <span className="brand-badge">Naive RAG</span>
+            <span className="brand-badge">Advanced RAG Model</span>
             <span className="status-pill status-pill--ready">Beginner-friendly architecture</span>
           </div>
           <h1>Learn the complete RAG loop in one small app.</h1>
