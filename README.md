@@ -1,6 +1,6 @@
-# Simple Naive RAG App
+# Advanced RAG App
 
-A beginner-friendly Retrieval-Augmented Generation demo that shows the core RAG loop without advanced retrieval tricks.
+An advanced Retrieval-Augmented Generation demo that combines semantic search, keyword search, reranking, and hybrid retrieval to improve answer quality.
 
 This version uses:
 
@@ -15,7 +15,8 @@ This version uses:
 - How documents become text
 - How text is cleaned and chunked
 - How chunks are converted to embeddings
-- How a vector store enables similarity search
+- How semantic and keyword search can be combined
+- How reranking improves retrieval quality
 - How retrieved chunks are injected into an LLM prompt
 - How a React frontend talks to backend API routes with relative URLs
 
@@ -51,7 +52,7 @@ project/
 2. Clean text to remove noise and normalize spacing.
 3. Chunk documents into small overlapping sections.
 4. Create embeddings for each chunk.
-5. Store embeddings in an in-memory vector store.
+5. Store embeddings in a vector store.
 
 ### Question Answering Pipeline
 
@@ -126,10 +127,9 @@ No separate backend terminal is needed during development because the backend is
 
 ## Learning Notes
 
-- This is a Naive RAG system on purpose.
-- It uses one vector store and one retrieval path.
-- It does not include hybrid search, reranking, graph RAG, multi-agent orchestration, or parent-child retrieval.
-- The goal is to understand the core architecture, not to build a production RAG stack.
+- This is an advanced RAG system built to demonstrate multiple retrieval strategies.
+- It combines semantic search, keyword search, hybrid search, and reranking.
+- The goal is to understand how retrieval quality can be improved before the LLM generates the final answer.
 
 ## Deployment Note
 
