@@ -4,10 +4,6 @@
   "outputDirectory": "dist",
   "rewrites": [
     {
-      "source": "/api/backend/(.*)",
-      "destination": "/api/backend/[[...path]]"
-    },
-    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
